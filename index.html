@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+    <!-- nav bar -->
+
+    <nav>
+        <div class="nav-logo">
+            <!-- <img src="" alt=""> -->
+            <p>FIT<span>ZONE</span></p>
+        </div>
+
+        <button class="toggle-button" id="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul id="nav-list">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Workouts</a></li>
+            <li><a href="">Trainers</a></li>
+            <li><a href="">Membership</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+        <div class="nav-button" id="navbutton">
+            <button>Join Now</button>
+            <i class="fa-regular fa-circle-user fa-2xl" style="color: #A61B29;"></i>
+        </div>
+    </nav>
+
+    <!-- landing page -->
+
+    <div class="landing">
+        <div class="slide-img" id="slide">
+            <img src="./image/slide1.png" alt="">
+            <img src="./image/slide2.png" alt="">
+            <img src="./image/slide3.png" alt="">
+        </div>
+
+        <div class="slide-button">
+            <button type="button" id="previous"> <i class="fa-regular fa-square-caret-left"></i> </button>
+            <button type="button" id="next"> <i class="fa-regular fa-square-caret-right"></i> </button>
+        </div>
+
+        <div class="slide-1">
+            <h1>PUSH YOUR LIMITS.</h1>
+            <p>Build Strength. Buid Confidence.</p>
+            <h5>Transform your body with powerful workouts and <br> the right training environment.</h5>
+
+            <div class="sli-button">
+                <button type="button">Join Now <i class="fa-solid fa-arrow-right fa-sm"
+                        style="color: #FFFFFF;"></i></button>
+                <button type="button">Explore all Workouts <i class="fa-solid fa-circle-arrow-right fa-sm"
+                        style="color: white;"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- about us -->
+
+    <div class="about-us">
+        <div class="ab-left">
+            <span>ABOUT FITZONE</span>
+            <div class="ab-line"></div>
+            <h1>More Than a Gym. <br> A Lifestyle.</h1>
+            <p>At FITZONE, we believe fitness is more than just lifting weights - it's about building strength, <br>
+                developing discipline and creating a healthier lifestyle. <br> Our goal is to help every individual
+                become stronger, fitter and more confident through consistent training and health habits.</p>
+        </div>
+        <div class="ab-rit">
+            <img src="./image/about.png" alt="">
+        </div>
+    </div>
+
+    <div class="records-all">
+        <div class="records">
+            <div class="rec-1">
+                <span id="num1">0</span>
+                <p>Workout <br> Programs</p>
+            </div>
+            <div class="re-line"></div>
+            <div class="rec-1">
+                <span id="num2">0</span>
+                <p>Fitness <br> Equipment</p>
+            </div>
+            <div class="re-line"></div>
+            <div class="rec-1">
+                <span id="num3">0</span>
+                <p>Expert <br> Trainers</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- workout -->
+
+    <div class="workouts">
+        <div class="work-title">
+            <div class="work-head">
+                <span>OUR WORKOUTS</span>
+                <div class="ab-line"></div>
+                <h1>Train Your Way. Reach Your Goals.</h1>
+                <!-- <p>Discover workout programs designed to help you build strength, improve endurance, and develop a healthier lifestyle.</p> -->
+            </div>
+        </div>
+        <div class="work-container">
+            <div class="work-card">
+                <img src="./image/strength.png" alt="">
+                <div class="card-content">
+                    <span>Strength Training</span>
+                    <p>Muscle Building & Strength</p>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="./image/cardio.png" alt="">
+                <div class="card-content">
+                    <span>Cardio Workout</span>
+                    <p>Stamina & endurance</p>
+                </div>
+            </div>
+            <div class="work-card">
+                <img src="./image/hiit.png" alt="">
+                <div class="card-content">
+                    <span>HIIT Training</span>
+                    <p>High-intensity workouts</p>
+                </div>
+            </div>
+
+
+            <!-- extra cards -->
+            <div class="work-card extra-card">
+                <img src="./image/flexible.png  " alt="">
+                <div class="card-content">
+                    <span>Flexibility Training</span>
+                    <p>Mobility & flexibility</p>
+                </div>
+            </div>
+            <div class="work-card extra-card">
+                <img src="./image/core.png" alt="">
+                <div class="card-content">
+                    <span>Core Training</span>
+                    <p>Core Strength & Stability</p>
+                </div>
+            </div>
+            <div class="work-card extra-card">
+                <img src="./image/full.png" alt="">
+                <div class="card-content">
+                    <span>Full Body Workout</span>
+                    <p>Multiple muscle groups training</p>
+                </div>
+            </div>
+        </div>
+        <div class="ex-button">
+            <button class="work-but" id="workbut">Explore All Workouts <i class="fa-solid fa-arrow-right fa-sm"
+                    style="color: #FFFFFF;"></i></button>
+        </div>
+    </div>
+
+    <!-- trainer -->
+
+    <div class="trainers">
+
+        <div class="trainer-title">
+            <h1>MEET OUR TRAINERS</h1>
+            <p>Expert Guidance. Strongrer body. Better lifestyle.</p>
+        </div>
+
+        <div class="trainer-content">
+
+            <div class="left-img">
+                <img id="main-img" src="./image/trainer-1.jpg" alt="Vikram">
+            </div>
+
+            <div class="right-card">
+
+                <div class="trainer-details">
+                    <span class="t-head">YOUR FITNESS PARTNER</span>
+                    <div class="ab-line" id="train"></div>
+                    <h1 id="trainer-name">Vikram</h1>
+                    <h4 id="role">Strength & Conditioning Coach</h4>
+                    <p id="experience">Experience: 8+ Years</p>
+                </div>
+
+                <div class="other-trainers" id="othertrainer">
+                    <div class="other-1" data-index="1">
+                        <img src="./image/trainer-2.jpg" alt="Aadhira">
+                        <p>Aadhira</p>
+                    </div>
+
+                    <div class="other-1" data-index="2">
+                        <img src="./image/trainer-3.jpg" alt="Rithvik">
+                        <p>Rithvik</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- bmi -->
+
+    <div class="bmi-all">
+        <div class="bmi">
+
+            <div class="bmi-left">
+                <div class="bmi-title">
+                    <span>Check Your BMI</span>
+                    <p>Understand your Body Mass Index and take <br> the first step towards a healthier, stronger you.
+                    </p>
+                </div>
+                <div class="bmi-calculator">
+                    <h1>Enter Your Measurement</h1>
+                    <form action="" id="myForm">
+
+                        <div class="weight">
+                            <label for="">Weight(kg)</label> <br>
+                            <input type="number" name="" id="wit" placeholder="Enter Your Weight">
+                        </div>
+
+                        <div class="height">
+                            <label for="">Height(cm)</label> <br>
+                            <input type="number" name="" id="hit" placeholder="Enter Your Height">
+                        </div>
+
+                        <div class="calc-button">
+                            <button id="calcbut" type="button">Calculate BMI</button>
+                        </div>
+
+                        <div class="textarea">
+                            <p name="" id="txta"></p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="bmi-right">
+                <img src="./image/bmi.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- membership -->
+    <div class="membership-plan">
+        <div class="member-title">
+            <p>Choose the Right Membership Plan.</p>
+            <span>Unlock Your Potential</span>
+        </div>
+        <div class="membership">
+            <div class="plan-1">
+                <i class="fa-solid fa-dumbbell "></i>
+                <h1>BASIC</h1>
+                <span>For Everyday Fitness</span>
+                <p>999 / month</p>
+                <ul>
+                    <li>Gym access</li>
+                    <li>Standard equipment</li>
+                    <li>Locker Facility</li>
+                </ul>
+                <div class="p-button">
+                    <button type="button" onclick="planForm()">Choose Plan</button>
+                </div>
+            </div>
+
+            <div class="plan-1">
+                <i class="fa-solid fa-bolt"></i>
+                <h1>PRO</h1>
+                <span>For Serious Progress</span>
+                <p>1,999 / month</p>
+                <ul>
+                    <li>All Gym access</li>
+                    <li>Trainer Guidance</li>
+                    <li>Workout planning</li>
+                </ul>
+                <div class="p-button">
+                    <button type="button" onclick="planForm()">Choose Plan</button>
+                </div>
+            </div>
+
+            <div class="plan-1">
+                <i class="fa-solid fa-crown"></i>
+                <h1>ELITE</h1>
+                <span>For a complete fitness experience</span>
+                <p>2,999 / month</p>
+                <ul>
+                    <li>All Gym facilities</li>
+                    <li>Personal Training sessions</li>
+                    <li>Nutrition guidance</li>
+                    <li>Progress tracking</li>
+                </ul>
+                <div class="p-button">
+                    <button type="button" onclick="planForm()">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- form -->
+
+    <div class="plan-form" id="plan">
+        <div class="form-title">
+            <h1>JOIN FITZONE</h1>
+            <p>Your Fitness Journey Starts here.</p>
+        </div>
+        <form action="" id="planForm">
+            <h3 id="pd">Personal Details</h3>
+
+            <div class="p-name">
+                <div class="fu-name">
+                    <label for="">Full Name</label> <br>
+                    <input type="text" name="plan" id="u-name" placeholder="Enter Your Name">
+                </div>
+                <div class="fu-name">
+                    <label for="">Age</label> <br>
+                    <input type="text" name="plan" id="u-age" placeholder="Enter Your Age">
+                </div>
+            </div>
+
+            <div class="mail-ph">
+                <div class="p-mail">
+                    <label for="">Email Address</label><br>
+                    <input type="email" name="plan" id="u-mail" placeholder="Enter Your Email">
+                </div>
+                <div class="p-phone">
+                    <label for="">Contact Number</label><br>
+                    <input type="number" name="plan" id="u-num" placeholder="Enter Your phone Number">
+                </div>
+            </div>
+
+            <h3>Membership Details</h3>
+            <p>Select Plan</p>
+            <input type="radio" name="amount" id="u-basic" value="Basic"><label for="">Basic - 999/month</label><br>
+            <input type="radio" name="amount" id="u-pro" value="Pro"><label for="">Pro - 1,999/month</label><br>
+            <input type="radio" name="amount" id="u-elite" value="Elite"><label for="">Elite - 2,999/month</label><br>
+
+            <h3>Membership Duration</h3>
+            <input type="radio" name="month" id="u-one"><label for="">1 Month</label><br>
+            <input type="radio" name="month" id="u-3"><label for="">3 Month</label><br>
+            <input type="radio" name="month" id="u-6"><label for="">6 Month</label><br>
+            <input type="radio" name="month" id="u-12"><label for="">12 Month</label><br>
+
+            <h3>Fitness Goal</h3>
+            <input type="radio" name="goal" id="u-muscle" value="Muscle Building"><label for="">Muscle Building</label><br>
+            <input type="radio" name="goal" id="u-strength" value="Strength & Endurance"><label for="">Strength & Endurance</label><br>
+            <input type="radio" name="goal" id="u-loss" value="Weight Loss"><label for="">Weight Loss</label><br>
+            <input type="radio" name="goal" id="u-general" value="General Fitness"><label for="">General Fitness</label><br>
+
+            <p id="result"></p>
+            <div class="mem-button">
+                <button type="submit" id="submit">Activate Membership Form</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="foot-1">
+            <i class="fa-solid fa-dumbbell "></i> <span> FITZONE</span>
+            <h1>PUSH YOUR LIMITS. OWN YOUR JOURNEY</h1>
+            <p>Build strength, improve your fitness and become the strongest version of yourself.</p>
+            <div class="f1-button">
+                <button type="button">Start Your Fitness Journey <i class="fa-solid fa-arrow-right fa-sm"
+                        style="color: #FFFFFF;"></i></button>
+            </div>
+        </div>
+
+        <div class="foot-2">
+            <div class="quick">
+                <span>QUICK LINKS</span>
+                <p><a href="">Home</a></p>
+                <p><a href="">About Us</a></p>
+                <p><a href="">Workouts</a></p>
+                <p><a href="">Trainers</a></p>
+                <p><a href="">BMI Calculator</a></p>
+                <p><a href="">Membership</a></p>
+            </div>
+            <div class="contact">
+                <span>CONTACT US</span><br>
+                <p><i class="fa-solid fa-location-dot"></i> 12/120 West Street, Chennai.</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+                <p><i class="fa-solid fa-envelope"></i> fitzone@gmail.com</p>
+
+                <div class="foot-3">
+                    <span>FOLLOW US</span><br>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot-copy">
+            <p><i class="fa-regular fa-copyright"></i> 2026 FITZONE. All Rights
+                Reserved.</p>
+            <div class="foot-pri">
+                <p>Privacy Policy</p>
+                <p>Terms & Conditions</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // nav bar
+
+        let togle = document.querySelector("#toggle")
+        let navlist = document.querySelector("#nav-list")
+        let nbutton = document.querySelector("#navbutton")
+
+        togle.onclick = () => {
+            navlist.classList.toggle("active")
+            nbutton.classList.toggle("active")
+        }
+
+        // landing page
+
+        let prev = document.getElementById("previous")
+        let nxt = document.getElementById("next")
+
+        let index = 0
+        let slide = document.getElementById("slide")
+        let total = slide.children.length;
+
+        function showSlide() {
+            slide.style.transform = `translateX(-${index*100}%)`;
+        }
+
+        function nextSlide() {
+            index++;
+            if (index == total) {
+                index = 0;
+            }
+            showSlide()
+        }
+
+        nxt.onclick = () => {
+            nextSlide()
+        }
+
+        prev.onclick = () => {
+            index--;
+            if (index < 0) {
+                index = total - 1
+            }
+            showSlide()
+        }
+        setInterval(nextSlide, 4000)
+
+        // records
+
+        function counter(id, target) {
+            let num = 0;
+            let count = setInterval(() => {
+                num++;
+                document.getElementById(id).innerHTML = `${num}+`;
+                if (num == target) {
+                    clearInterval(count);
+                }
+            }, 100)
+        }
+        counter("num1", 20)
+        counter("num2", 50)
+        counter("num3", 10)
+
+        // workout
+
+        let view = document.querySelector("#workbut");
+        let extra = document.querySelectorAll(".extra-card")
+
+        view.onclick = () => {
+            extra.forEach(function (card) {
+                card.classList.toggle("show")
+            });
+        };
+
+        // trainers
+
+        const trainers = [{
+                name: "Vikram",
+                role: "Strength & Conditioning",
+                experience: "Experience: 8+ Years",
+                image: "./image/trainer-1.jpg",
+                alt: "Vikram"
+            },
+            {
+                name: "Aadhira",
+                role: "Fitness & Personal Training Coach",
+                experience: "Experience: 5+ Years",
+                image: "./image/trainer-2.jpg",
+                alt: "Aadhira"
+            },
+            {
+                name: "Rithvik",
+                role: "Cardio & Endurance Coach",
+                experience: "Experience: 4+ Years",
+                image: "./image/trainer-3.jpg",
+                alt: "Rithvik"
+            }
+        ]
+
+        let mainimg = document.querySelector("#main-img")
+        let trainername = document.querySelector("#trainer-name")
+        let trainerrole = document.querySelector("#role")
+        let trainerexperience = document.querySelector("#experience")
+        let othertrainer = document.querySelector("#othertrainer")
+
+        let selectedIndex = 0;
+
+        function showTrainer(index) {
+
+            selectedIndex = index;
+
+            const trainer = trainers[index];
+
+            mainimg.src = trainer.image;
+            mainimg.alt = trainer.alt;
+            trainername.textContent = trainer.name;
+            trainerrole.textContent = trainer.role;
+            trainerexperience.textContent = trainer.experience;
+
+            othertrainer.innerHTML = "";
+
+            trainers.forEach((tdetail, i) => {
+                if (i !== selectedIndex) {
+
+                    const card = document.createElement("div");
+
+                    card.className = "other-1";
+                    card.dataset.index = i;
+
+                    card.innerHTML = ` <img src="${tdetail.image}" alt="${tdetail.alt}">
+                    <p>${tdetail.name}</p>`;
+
+                    othertrainer.appendChild(card);
+                }
+            });
+        }
+
+        othertrainer.onclick = (event) => {
+            const card = event.target.closest(".other-1");
+
+            if (card) {
+                showTrainer(Number(card.dataset.index));
+            }
+        }
+        showTrainer(0);
+
+        // bmi
+
+        let form = document.getElementById("myForm");
+        let height = document.getElementById("hit");
+        let weight = document.getElementById("wit");
+        let text = document.getElementById("txta");
+        let button = document.getElementById("calcbut")
+
+        button.onclick = () => {
+            let h = Number(height.value) / 100;
+            let w = Number(weight.value)
+
+            let bmi = w / (h * h)
+            let result = ""
+            if (weight <= 0 || height <= 0) {
+                text.value = "Kindly Enter valid Weight and Height";
+            } else {
+                if (bmi < 18.5) {
+                    result = "Underweight";
+                } else if (bmi < 25) {
+                    result = "Normal Weight";
+                } else if (bmi < 30) {
+                    result = "Overweight";
+                } else {
+                    result = "Obesity";
+                }
+
+                text.innerHTML = `Your BMI Value : ${bmi.toFixed(2)}<br>Category is : ${result}`
+            }
+        }
+
+        // membership form
+
+        function planForm(){
+            let pform = document.querySelector("#plan")
+            pform.classList.add("active")
+        }
+
+        let pform = document.querySelector("#plan")
+
+        pform.onsubmit = (event)=>{
+            event.preventDefault();
+
+            let uname = document.querySelector("#u-name").value
+            let result = document.querySelector("#result")
+
+            let amount = document.querySelector('input[name="amount"]:checked').value
+            let goal = document.querySelector('input[name="goal"]:checked').value
+
+            result.innerHTML = `Name : ${uname} <br> Membership Plan : ${amount} <br> Fitness Goal : ${goal}`
+
+        }
+    </script>
+</body>
+
+</script>
+
+</html>
