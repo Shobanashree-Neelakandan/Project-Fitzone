@@ -170,7 +170,7 @@
                 <img src="./image/full.png" alt="">
                 <div class="card-content">
                     <span>Full Body Workout</span>
-                    <p>Multiple muscle groups training</p>
+                    <p>Multiple muscle training</p>
                 </div>
             </div>
         </div>
@@ -369,10 +369,11 @@
             <input type="radio" name="goal" id="u-loss" value="Weight Loss"><label for="">Weight Loss</label><br>
             <input type="radio" name="goal" id="u-general" value="General Fitness"><label for="">General Fitness</label><br>
 
-            <p id="result"></p>
+            
             <div class="mem-button">
                 <button type="submit" id="submit">Activate Membership Form</button>
             </div>
+            <p id="result"></p>
             
         </form>
     </div>
@@ -619,7 +620,7 @@
             let amount = document.querySelector('input[name="amount"]:checked').value
             let goal = document.querySelector('input[name="goal"]:checked').value
 
-            result.innerHTML = `Name : ${uname} <br> Membership Plan : ${amount} <br> Fitness Goal : ${goal}`
+            result.innerHTML = `Name : ${uname} <br> Membership Plan : ${amount} <br> Fitness Goal : ${goal} <br> <strong style = "color:red"> Membership Form Activated </strong>`
 
         }
     </script>
