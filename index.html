@@ -38,23 +38,23 @@
         </button>
 
         <ul id="nav-list">
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Workouts</a></li>
-            <li><a href="">Trainers</a></li>
-            <li><a href="">Membership</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href=#home>Home</a></li>
+            <li><a href=#about>About Us</a></li>
+            <li><a href=#wrk>Workouts</a></li>
+            <li><a href=#experts>Trainers</a></li>
+            <li><a href=#memplan>Membership</a></li>
+            <li><a href=#cont>Contact</a></li>
         </ul>
 
         <div class="nav-button" id="navbutton">
-            <button>Join Now</button>
+            <button type="button" onclick="planForm()" id="nav-join-btn">Join Now</button>
             <i class="fa-regular fa-circle-user fa-2xl" style="color: #A61B29;"></i>
         </div>
     </nav>
 
     <!-- landing page -->
 
-    <div class="landing">
+    <div class="landing" id="home">
         <div class="slide-img" id="slide">
             <img src="./image/slide1.png" alt="">
             <img src="./image/slide2.png" alt="">
@@ -62,12 +62,12 @@
         </div>
 
         <div class="slide-button">
-            <button type="button" id="previous"> <i class="fa-regular fa-square-caret-left"></i> </button>
-            <button type="button" id="next"> <i class="fa-regular fa-square-caret-right"></i> </button>
+            <button type="button" id="previous"> < </button>
+            <button type="button" id="next"> > </button>
         </div>
 
         <div class="slide-1">
-            <h1>PUSH YOUR LIMITS.</h1>
+            <h1>PUSH YOUR <span>LIMITS.</span> </h1>
             <p>Build Strength. Buid Confidence.</p>
             <h5>Transform your body with powerful workouts and <br> the right training environment.</h5>
 
@@ -83,21 +83,21 @@
 
     <!-- about us -->
 
-    <div class="about-us">
+    <div class="about-us" id="about">
         <div class="ab-left">
-            <span>ABOUT FITZONE</span>
-            <div class="ab-line"></div>
+            <span>ABOUT US</span>
             <h1>More Than a Gym. <br> A Lifestyle.</h1>
-            <p>At FITZONE, we believe fitness is more than just lifting weights - it's about building strength, <br>
-                developing discipline and creating a healthier lifestyle. <br> Our goal is to help every individual
-                become stronger, fitter and more confident through consistent training and health habits.</p>
+            <p>At FITZONE, we believe fitness is more than just lifting weights - it's about building strength, and 
+                developing discipline. <br> Our goal is to help every individual
+                become stronger and confident.</p> 
         </div>
         <div class="ab-rit">
-            <img src="./image/about.png" alt="">
+            <img src="./image/ab-1.png" alt="" class="img-1">
+            <img src="./image/ab-2.png" alt="" class="img-2">
         </div>
     </div>
 
-    <div class="records-all">
+    <!-- <div class="records-all">
         <div class="records">
             <div class="rec-1">
                 <span id="num1">0</span>
@@ -114,17 +114,22 @@
                 <p>Expert <br> Trainers</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- workout -->
 
-    <div class="workouts">
+    <div class="workouts" id="wrk">
         <div class="work-title">
             <div class="work-head">
-                <span>OUR WORKOUTS</span>
-                <div class="ab-line"></div>
-                <h1>Train Your Way. Reach Your Goals.</h1>
-                <!-- <p>Discover workout programs designed to help you build strength, improve endurance, and develop a healthier lifestyle.</p> -->
+                <div class="work-top">
+                    <span>OUR WORKOUTS</span>
+                    <div class="ab-line"></div>
+                    <h1>Train Your Way. <br> Reach Your Goals.</h1>
+                </div>
+                <div class="ex-button">
+                    <button class="work-but" id="workbut">Explore All Workouts <i class="fa-solid fa-arrow-right fa-sm"
+                            style="color: #A61B29;"></i></button>
+                </div>
             </div>
         </div>
         <div class="work-container">
@@ -174,15 +179,12 @@
                 </div>
             </div>
         </div>
-        <div class="ex-button">
-            <button class="work-but" id="workbut">Explore All Workouts <i class="fa-solid fa-arrow-right fa-sm"
-                    style="color: #FFFFFF;"></i></button>
-        </div>
+
     </div>
 
     <!-- trainer -->
 
-    <div class="trainers">
+    <div class="trainers" id="experts">
 
         <div class="trainer-title">
             <h1>MEET OUR TRAINERS</h1>
@@ -238,12 +240,12 @@
 
                         <div class="weight">
                             <label for="">Weight(kg)</label> <br>
-                            <input type="number" name="" id="wit" placeholder="Enter Your Weight">
+                            <input type="number" name="" id="wit" placeholder="Enter Your Weight" required>
                         </div>
 
                         <div class="height">
                             <label for="">Height(cm)</label> <br>
-                            <input type="number" name="" id="hit" placeholder="Enter Your Height">
+                            <input type="number" name="" id="hit" placeholder="Enter Your Height" required>
                         </div>
 
                         <div class="calc-button">
@@ -264,7 +266,8 @@
     </div>
 
     <!-- membership -->
-    <div class="membership-plan">
+
+    <div class="membership-plan" id="memplan">
         <div class="member-title">
             <p>Choose the Right Membership Plan.</p>
             <span>Unlock Your Potential</span>
@@ -307,18 +310,17 @@
                 <p>2,999 / month</p>
                 <ul>
                     <li>All Gym facilities</li>
-                    <li>Personal Training sessions</li>
+                    <li>Personal Training</li>
                     <li>Nutrition guidance</li>
-                    <li>Progress tracking</li>
                 </ul>
                 <div class="p-button">
-                    <button type="button" onclick="planForm()">Choose Plan</button>
+                    <button type="button" onclick="planForm()" id="join-btn">Choose Plan</button>
                 </div>
             </div>
         </div>
     </div>
 
-    
+
     <!-- form -->
 
     <div class="plan-form" id="plan">
@@ -327,106 +329,108 @@
             <p>Your Fitness Journey Starts here.</p>
         </div>
         <form action="" id="planForm">
+            <button type="button" id="cancel">X</button>
             <h3 id="pd">Personal Details</h3>
 
             <div class="p-name">
                 <div class="fu-name">
                     <label for="">Full Name</label> <br>
-                    <input type="text" name="plan" id="u-name" placeholder="Enter Your Name">
+                    <input type="text" name="plan" id="u-name" placeholder="Enter Your Name" required>
                 </div>
                 <div class="fu-name">
                     <label for="">Age</label> <br>
-                    <input type="text" name="plan" id="u-age" placeholder="Enter Your Age">
+                    <input type="text" name="plan" id="u-age" placeholder="Enter Your Age" required>
                 </div>
             </div>
 
             <div class="mail-ph">
                 <div class="p-mail">
                     <label for="">Email Address</label><br>
-                    <input type="email" name="plan" id="u-mail" placeholder="Enter Your Email">
+                    <input type="email" name="plan" id="u-mail" placeholder="Enter Your Email" required>
                 </div>
                 <div class="p-phone">
                     <label for="">Contact Number</label><br>
-                    <input type="number" name="plan" id="u-num" placeholder="Enter Your phone Number">
+                    <input type="number" name="plan" id="u-num" placeholder="Enter Your phone Number" required>
                 </div>
             </div>
 
-            <h3>Membership Details</h3>
             <p>Select Plan</p>
+            <h3>Membership Details</h3>
+            
             <input type="radio" name="amount" id="u-basic" value="Basic"><label for="">Basic - 999/month</label><br>
             <input type="radio" name="amount" id="u-pro" value="Pro"><label for="">Pro - 1,999/month</label><br>
             <input type="radio" name="amount" id="u-elite" value="Elite"><label for="">Elite - 2,999/month</label><br>
 
             <h3>Membership Duration</h3>
-            <input type="radio" name="month" id="u-one"><label for="">1 Month</label><br>
-            <input type="radio" name="month" id="u-3"><label for="">3 Month</label><br>
-            <input type="radio" name="month" id="u-6"><label for="">6 Month</label><br>
-            <input type="radio" name="month" id="u-12"><label for="">12 Month</label><br>
+            <input type="radio" name="month" id="u-one" value="1 Month"><label for="">1 Month</label><br>
+            <input type="radio" name="month" id="u-3" value="3 Month"><label for="">3 Month</label><br>
+            <input type="radio" name="month" id="u-6" value="6 Month"><label for="">6 Month</label><br>
+            <input type="radio" name="month" id="u-12" value="12 Month"><label for="">12 Month</label><br>
 
             <h3>Fitness Goal</h3>
-            <input type="radio" name="goal" id="u-muscle" value="Muscle Building"><label for="">Muscle Building</label><br>
-            <input type="radio" name="goal" id="u-strength" value="Strength & Endurance"><label for="">Strength & Endurance</label><br>
+            <input type="radio" name="goal" id="u-muscle" value="Muscle Building"><label for="">Muscle
+                Building</label><br>
+            <input type="radio" name="goal" id="u-strength" value="Strength & Endurance"><label for="">Strength &
+                Endurance</label><br>
             <input type="radio" name="goal" id="u-loss" value="Weight Loss"><label for="">Weight Loss</label><br>
-            <input type="radio" name="goal" id="u-general" value="General Fitness"><label for="">General Fitness</label><br>
+            <input type="radio" name="goal" id="u-general" value="General Fitness"><label for="">General
+                Fitness</label><br>
 
-            
+
             <div class="mem-button">
                 <button type="submit" id="submit">Activate Membership Form</button>
             </div>
             <p id="result"></p>
-            
+
         </form>
     </div>
 
     <!-- footer -->
 
-    <div class="footer">
+    <div class="footer" id="cont">
         <div class="foot-1">
-            <i class="fa-solid fa-dumbbell "></i> <span> FITZONE</span>
-            <h1>PUSH YOUR LIMITS. OWN YOUR JOURNEY</h1>
-            <p>Build strength, improve your fitness and become the strongest version of yourself.</p>
-            <div class="f1-button">
-                <button type="button">Start Your Fitness Journey <i class="fa-solid fa-arrow-right fa-sm"
-                        style="color: #FFFFFF;"></i></button>
-            </div>
-        </div>
+            <p> FIT<span>ZONE</span></p>
+        </div>>
 
         <div class="foot-2">
             <div class="quick">
                 <span>QUICK LINKS</span>
-                <p><a href="">Home</a></p>
-                <p><a href="">About Us</a></p>
-                <p><a href="">Workouts</a></p>
-                <p><a href="">Trainers</a></p>
-                <p><a href="">BMI Calculator</a></p>
-                <p><a href="">Membership</a></p>
+                <p><a href=#home>Home</a></p>
+                <p><a href=#about>About Us</a></p>
+                <p><a href=#wrk>Workouts</a></p>
+                <p><a href=#experts>Trainers</a></p>
+                <p><a href=#memplan>Membership</a></p>
             </div>
             <div class="contact">
                 <span>CONTACT US</span><br>
                 <p><i class="fa-solid fa-location-dot"></i> 12/120 West Street, Chennai.</p>
                 <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
                 <p><i class="fa-solid fa-envelope"></i> fitzone@gmail.com</p>
-
-                <div class="foot-3">
+            </div>
+            <div class="foot-3">
                     <span>FOLLOW US</span><br>
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-square-facebook"></i>
                     <i class="fa-brands fa-youtube"></i>
                 </div>
-            </div>
         </div>
 
         <div class="foot-copy">
             <p><i class="fa-regular fa-copyright"></i> 2026 FITZONE. All Rights
                 Reserved.</p>
-            <div class="foot-pri">
-                <p>Privacy Policy</p>
-                <p>Terms & Conditions</p>
-            </div>
+            <span>Privacy Policy | Terms & Condition.</span>
         </div>
     </div>
 
     <script>
+
+        let joinbtn = document.querySelector("#nav-join-btn")
+        let pform = document.querySelector("#plan")
+
+        joinbtn.onclick = ()=>{
+            pform.classList.add("active")
+            pform.scrollIntoView({behavior:"smooth"});
+        }
         // nav bar
 
         let togle = document.querySelector("#toggle")
@@ -494,10 +498,18 @@
         let extra = document.querySelectorAll(".extra-card")
 
         view.onclick = () => {
+            // const isExpanded = view.textContent.includes("Show Less");
+            setTimeout(()=>{
+                view.scrollIntoView({behavior:"smooth"})
+            },100)
+            
             extra.forEach(function (card) {
                 card.classList.toggle("show")
             });
+
+            // view.textContent = isExpanded? "Explore All Workout ": "Show Less ";
         };
+
 
         // trainers
 
@@ -587,7 +599,11 @@
             let result = ""
             if (weight <= 0 || height <= 0) {
                 text.value = "Kindly Enter valid Weight and Height";
-            } else {
+            }
+            else if(!h || !w){
+                alert("Kindly fill the weight and height column")
+            } 
+            else {
                 if (bmi < 18.5) {
                     result = "Underweight";
                 } else if (bmi < 25) {
@@ -604,23 +620,64 @@
 
         // membership form
 
-        function planForm(){
+        function planForm() {
             let pform = document.querySelector("#plan")
             pform.classList.add("active")
+
+            setTimeout(() => {
+        pform.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }, 100);
         }
 
-        let pform = document.querySelector("#plan")
+        let close = document.querySelector("#cancel")
 
-        pform.onsubmit = (event)=>{
+        close.onclick = ()=>{
+            pform.classList.remove("active");
+        }
+
+        let membership = document.querySelector("#planForm");
+        membership.onsubmit = (event) => {
             event.preventDefault();
 
-            let uname = document.querySelector("#u-name").value
+            let uname = document.querySelector("#u-name").value;
+            let age = document.querySelector("#u-age").value;
+            let email = document.querySelector("#u-mail").value;
+            let phone = document.querySelector("#u-num").value;
+
+            let amount = document.querySelector('input[name="amount"]:checked').value;
+            let duration = document.querySelector('input[name="month"]:checked').value;
+            let goal = document.querySelector('input[name="goal"]:checked').value;
+
             let result = document.querySelector("#result")
 
-            let amount = document.querySelector('input[name="amount"]:checked').value
-            let goal = document.querySelector('input[name="goal"]:checked').value
+            if(!amount || !duration || !goal){
+                alert("Kindly Select Membership Plan details.")
+            }
 
-            result.innerHTML = `Name : ${uname} <br> Membership Plan : ${amount} <br> Fitness Goal : ${goal} <br> <strong style = "color:red"> Membership Form Activated </strong>`
+            let member = {
+                name: uname,
+                age: age,
+                email: email,
+                phone: phone,
+                amount: amount,
+                duration: duration,
+                goal:goal 
+            };
+
+            localStorage.setItem("MembershipData", JSON.stringify(member));
+
+            result.innerHTML =
+                `Name : ${member.name} <br>
+                Age: ${member.age} <br>
+                E-mail: ${member.email} <br>
+                Contact Number: ${member.phone} <br>
+                Membership Plan : ${member.amount} <br>
+                Duration: ${member.duration} <br>
+                Fitness Goal : ${member.goal} <br> 
+                <strong style = "color:red"> Membership Form Activated </strong>`
 
         }
     </script>
